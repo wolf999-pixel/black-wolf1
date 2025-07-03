@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphisme | Portfolio</title>
+    <link rel="stylesheet" href="styles-photographie.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="photographie-header">
+        <nav>
+            <a href="index.html" class="nav-logo">
+                <img src="images/BLACK_WOLF_YELOW.png" alt="Logo" height="40">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="graphisme.html">Graphisme</a></li>
+                            </ul>
+        </nav>
+        
+        <div class="hero-content">
+            <h1>Créations visuelles</h1>
+            <p>Visuelle  attrayants & captivants</p>
+        </div>
+    </header>
+
+    <main class="photographie-main">
+        <section class="filters-section">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Tout voir</button>
+                    <button class="filter-btn" data-filter="portrait">portrait</button>
+                    <button class="filter-btn" data-filter="paysage">paysage</button>
+                    <button class="filter-btn" data-filter="urbain">urbain</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio-grid">
+            <div class="container">
+                <div class="grid" id="designGrid">
+                    <!-- Contenu généré par JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="close-btn">&times;</span>
+            <img src="" alt="" class="lightbox-img" id="lightboxImg">
+            <div class="lightbox-info">
+                <h3 id="lightboxTitle"></h3>
+                <p id="lightboxDesc"></p>
+                <p class="lightbox-meta" id="lightboxMeta"></p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="photographie-footer">
+        <p>© 2025 Portfolio photographique | Tous droits réservés</p>
+    </footer>
+
+    <script src="photo-data.js"></script>
+</body>
+</html>
